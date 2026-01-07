@@ -37,6 +37,7 @@
     <packageinfo name="com.android.stk" path="/system/app/Stk" />
     <packageinfo name="com.qti.confuridialer" path="/product/app/ConfURIDialer" />
     <packageinfo name="com.qti.phone" path="/system_ext/app/QtiTelephony" />
+    <packageinfo name="com.qti.phone" path="/system_ext/priv-app/QtiTelephony" />
     <packageinfo name="com.qti.telephonysettings" path="/product/app/QtiTelephonySettings" />
     <packageinfo name="com.qti.qualcomm.carriertest" path="/system_ext/app/CarrierTest" />
     <packageinfo name="com.qti.qualcomm.datastatusnotification" path="/system_ext/app/datastatusnotification" />

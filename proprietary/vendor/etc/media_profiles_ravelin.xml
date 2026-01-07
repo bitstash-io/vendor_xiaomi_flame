@@ -109,7 +109,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -148,7 +148,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -200,7 +200,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -241,7 +241,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -312,7 +312,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -326,7 +326,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -340,7 +340,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -362,7 +362,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -401,7 +401,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -453,7 +453,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -495,7 +495,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -523,7 +523,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -565,7 +565,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -579,7 +579,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -593,7 +593,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -615,7 +615,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -654,7 +654,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -706,7 +706,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -747,7 +747,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -818,7 +818,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -832,7 +832,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -846,7 +846,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -860,7 +860,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -874,7 +874,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -909,7 +909,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -948,7 +948,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -1000,7 +1000,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -1041,7 +1041,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1112,7 +1112,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1126,7 +1126,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1140,7 +1140,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1154,7 +1154,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -1168,7 +1168,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="96000"
+             bitRate="192000"
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
@@ -1203,7 +1203,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -1242,7 +1242,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -1294,7 +1294,7 @@
              frameRate="30" />
 
       <Audio codec="amrnb"
-             bitRate="192000"
+             bitRate="12200"
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
@@ -1335,7 +1335,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1405,7 +1405,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1419,7 +1419,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1433,7 +1433,7 @@
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="192000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -1470,12 +1470,12 @@
         maxHFRMode="0"  />
 
     <AudioEncoderCap name="aac" enabled="true"
-        minBitRate="8000" maxBitRate="192000"
+        minBitRate="8000" maxBitRate="96000"
         minSampleRate="8000" maxSampleRate="48000"
         minChannels="1" maxChannels="6" />
 
     <AudioEncoderCap name="heaac" enabled="true"
-        minBitRate="8000" maxBitRate="192000"
+        minBitRate="8000" maxBitRate="64000"
         minSampleRate="16000" maxSampleRate="48000"
         minChannels="1" maxChannels="1" />
 
@@ -1485,12 +1485,12 @@
         minChannels="1" maxChannels="1" />
 
     <AudioEncoderCap name="amrwb" enabled="true"
-        minBitRate="6600" maxBitRate="192000"
+        minBitRate="6600" maxBitRate="23850"
         minSampleRate="16000" maxSampleRate="16000"
         minChannels="1" maxChannels="1" />
 
     <AudioEncoderCap name="amrnb" enabled="true"
-        minBitRate="5525" maxBitRate="192000"
+        minBitRate="5525" maxBitRate="12200"
         minSampleRate="8000" maxSampleRate="8000"
         minChannels="1" maxChannels="1" />
 
@@ -1506,8 +1506,8 @@
         for TEST applications. For other applications, we do
         not perform any checks at all.
     -->
-    <VideoDecoderCap name="wmv" enabled="true"/>
-    <AudioDecoderCap name="wma" enabled="true"/>
+    <VideoDecoderCap name="wmv" enabled="false"/>
+    <AudioDecoderCap name="wma" enabled="false"/>
 
     <!--
         The VideoEditor Capability configuration:

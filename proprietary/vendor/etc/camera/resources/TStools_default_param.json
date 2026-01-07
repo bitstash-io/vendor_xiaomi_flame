@@ -61,10 +61,40 @@
     "##CameraSimulate": "相机模拟跑图",
     "CameraSimulate": [
         {
+            "##note": "前置经典-预览",
+            "Type": "Preview",
+            "RunCount": 2,
+            "ConfigPath": "truesight_config_front.json",
+            "MapParameter": [[0,0.85],[1,0.30],[200,0.30],[201,0.20]]
+        },
+        {
             "##note": "前置经典-拍后",
             "Type": "Capture",
             "RunCount": 1,
             "ConfigPath": "truesight_config_front.json",
+            "MapParameter": [[0,0.85],[1,0.30],[200,0.30],[201,0.20]]
+        },
+        {
+            "##note": "后置人像-经典",
+            "Type": "Capture",
+            "RunCount": 1,
+            "ConfigPath": "truesight_config_rear.json",
+            "MapParameter": [[0,1.00],[1,1.00]]
+        }
+    ],
+
+    "##StressCase": "压力测试",
+    "StressCase" : [
+        {
+            "Type": "All",
+            "RunCount": 50,
+            "ConfigPath": "truesight_config_front.json",
+            "MapParameter": [[0,0.85],[1,0.30],[200,0.30],[201,0.20]]
+        },
+        {
+            "Type": "All",
+            "RunCount": 50,
+            "ConfigPath": "truesight_config_rear.json",
             "MapParameter": [[0,1.00],[1,1.00]]
         }
     ]

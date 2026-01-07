@@ -28,9 +28,9 @@
            Resources="0x40C00000, 0x1, 0x40804000, 0xFFFF, 0x40804100, 0xFFFF,
                       0x40800000, 1497, 0x40800100, 1497" />
         <Config
-           Id="0x00001081" Type="1" Enable="true" Timeout="3000" Target="ravelin,montague,montaguep"
+           Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="ravelin,montague,montaguep"
            Resources="0x40C00000, 0x1, 0x40804000, 0xFFFF, 0x40804100, 0xFFFF,
-                      0x40800000, 0xFFF, 0x40800100, 0xFFF" />
+                      0x40800000, 0xFFFF, 0x40800100, 0xFFFF" />
 
     <!--app lauch boost (disabling packing)-->
         <!-- POWER COLLAPSE resource opcode, value-->
@@ -154,12 +154,6 @@
            Resources="0x40C00000, 0x1, 0x40804000, 0xFFFF, 0x40804100, 0xFFFF,
                       0x40800000, 1382, 0x40800100, 1363" />
 
-    <!--app launch boost (attach application) -->
-        <!-- SCHED_TASK_BOOST resource opcode, value-->
-        <Config
-            Id="0x00001081" Type="103" Enable="true" Timeout="2000"
-            Resources="0x40C80000, 0x0" />
-
     <!-- app resume boost -->
     <!--  SCHEDBOOST resource opcode, value -->
     <!--  CPUBOOST_MAX_FREQ BIG Core resource opcode, value -->
@@ -170,6 +164,12 @@
            Id="0x00001082" Type="1" Enable="true" Timeout="700" Target="ravelin"
            Resources="0x40C00000, 0x1, 0x40804000, 0xFFFF, 0x40804100, 0xFFFF,
                       0x40800000, 0xFFF, 0x40800100, 0xFFF" />
+
+    <!--app launch boost (attach application) -->
+        <!-- SCHED_TASK_BOOST resource opcode, value-->
+        <Config
+            Id="0x00001081" Type="103" Enable="true" Timeout="2000"
+            Resources="0x40C80000, 0x0" />
 
     <!--Animation boost -->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -206,10 +206,6 @@
         <!-- LPM Bias resource opcode, value-->
 
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="ravelin" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
-        <Config
             Id="0x00001080" Type="1" Enable="true" Fps="90"
             Resources="0x40800000, 1497, 0x40800100, 1497,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
@@ -231,7 +227,7 @@
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Fps="120" Target="ravelin,montague,montaguep"
-            Resources="0x40800000, 2054, 0x40800100, 1478,
+            Resources="0x40800000, 1900, 0x40800100, 1497,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 2,
                        0x40C78000, 0, 0x40C7C000, 0" />
 
@@ -275,10 +271,6 @@
         <!-- LPM Bias resource opcode, value-->
 
         <Config
-             Id="0x00001080" Type="2" Enable="true" Target="ravelin" Fps="60"
-             Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
-        <Config
             Id="0x00001080" Type="2" Enable="true" Fps="90"
             Resources="0x40800000, 1497, 0x40800100, 1497,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
@@ -300,7 +292,7 @@
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Fps="120" Target="ravelin,montague,montaguep"
-            Resources="0x40800000, 2054, 0x40800100, 1478,
+            Resources="0x40800000, 1900, 0x40800100, 1497,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 2,
                        0x40C78000, 0, 0x40C7C000, 0" />
 
@@ -338,15 +330,6 @@
             Resources="0x40800000, 960, 0x40800100, 940,
                        0x40C00000, 2, 0x42804000, 0, 0x42C20000, 1" />
 
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
-        <!-- SCHEDBOOST resource opcode, value-->
-
-        <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="ravelin" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -380,7 +363,7 @@
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Fps="120"
             Target="ravelin,montague,montaguep"
-            Resources="0x40800000, 2054, 0x40800100, 1478,
+            Resources="0x40800000, 1900, 0x40800100, 1497,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 2,
                        0x40C78000, 0, 0x40C7C000, 0, 0x42804000, 2" />
 
@@ -606,14 +589,14 @@
                            0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70"/>
 
     <!-- PiCard Early Wakeup both GPU and Display -->
-        <!-- GPU DISABLE resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
                 Id="0x00001098" Type="0" Enable="true" Timeout="2000"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
-        <!-- GPU DISABLE resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <Config
                 Id="0x00001099" Type="0" Enable="true" Timeout="2000"
                 Resources="0x42834000, 1" />
@@ -654,16 +637,12 @@
             Resources="0x40C00000, 2, 0x40C78000, 0, 0x40C7C000, 0, 0x42C20000, 1" />
 
         <Config
-             Id="0x00001080" Type="5" Enable="true" Target="ravelin" Fps="60"
-             Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
-        <Config
             Id="0x00001080" Type="5" Enable="true" Fps="90"
             Resources="0x40C00000, 2, 0x40800000, 1497, 0x40C78000, 0, 0x40C7C000, 0, 0x42C20000, 1" />
 
         <Config
-            Id="0x00001080" Type="5" Enable="true" Target="ravelin" Fps="120, 144, 180"
-            Resources="0x40C00000, 2, 0x40800000, 2054, 0x40800100, 1478, 0x40C78000, 0, 0x40C7C000, 0" />
+            Id="0x00001080" Type="5" Enable="true" Fps="120, 144, 180"
+            Resources="0x40C00000, 2, 0x40800000, 1900, 0x40C78000, 0, 0x40C7C000, 0" />
 
         <!-- Type 6 Medium Scrolls : Horizontal and Verical -->
         <!-- MIN_FREQ_CLUSTER_BIG_CORE_0 resource opcode, value-->
@@ -690,10 +669,6 @@
                        0x40C74000, 0xF0, 0x40408000, 0x27, 0x41008000, 0, 0x42C20000, 1" />
 
         <Config
-             Id="0x00001080" Type="6" Enable="true" Target="ravelin" Fps="60"
-             Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
-        <Config
             Id="0x00001080" Type="6" Enable="true" Fps="90" Target="parrot"
             Resources="0x40800000, 1497, 0x40C00000, 2,
                        0x41000000, 3, 0x43480000, 0xAAE60, 0x40C78000, 0, 0x40C7C000, 0,
@@ -715,7 +690,7 @@
          <Config
             Id="0x00001080" Type="6" Enable="true" Fps="120, 144, 180"
             Target="ravelin,montague,montaguep"
-            Resources="0x40800000, 2054, 0x40800100, 1478, 0x40C00000, 2,
+            Resources="0x40800000, 1900, 0x40C00000, 2,
                        0x41000000, 2, 0x43480000, 0xAAE60, 0x40C78000, 0, 0x40C7C000, 0,
                        0x40C74000, 0xF0, 0x40408000, 0x27, 0x41008000, 0" />
 
@@ -744,10 +719,6 @@
                        0x40C74000, 0xF0, 0x40408000, 0x27, 0x41008000, 0, 0x42C20000, 1" />
 
         <Config
-             Id="0x00001080" Type="7" Enable="true" Target="ravelin" Fps="60"
-             Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 940, 0x40C00000, 2" />
-
-        <Config
             Id="0x00001080" Type="7" Enable="true" Fps="90" Target="parrot"
             Resources="0x40800000, 1497, 0x40C00000, 2,
                        0x41000000, 3, 0x43480000, 0xAAE60, 0x40C78000, 0, 0x40C7C000, 0,
@@ -768,10 +739,11 @@
         <Config
             Id="0x00001080" Type="7" Enable="true" Fps="120, 144, 180"
             Target="ravelin,montague,montaguep"
-            Resources="0x40800000, 2054, 0x40800100, 1478, 0x40C00000, 2,
+            Resources="0x40800000, 1900, 0x40C00000, 2,
                        0x41000000, 2, 0x43480000, 0xAAE60, 0x40C78000, 0, 0x40C7C000, 0,
                        0x40C74000, 0xF0, 0x40408000, 0x27, 0x41008000, 0" />
-	<!--XiaoMi bluetooth boost-->
+
+        <!--XiaoMi bluetooth boost-->
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
@@ -788,23 +760,11 @@
         <!-- GPU DISABLE resource opcode, value-->
         <!-- Type="1", bluetooth boost of 3sec-->
         <Config
-            Id="0x000011C0" Type="1" Enable="true" Timeout="3000" Target="ravelin"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                    0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41818000, 0xFF,
-                    0x41800000, 0xFF, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43430100, 0x28C5,
-                    0x43400000, 0xFFFF, 0x4281C000, 2000" />
+              Id="0x000011C0" Type="1" Enable="true" Timeout="3000" Target="khaje"
+              Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                         0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41818000, 0xFF,
+                         0x41800000, 0xFF, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43430100, 0x28C5,
+                         0x43400000, 0xFFFF, 0x4281C000, 2000" />
 
-                <!-- XIAOMI PERF MISC BOOST-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- PULL DOWN STATUS BAR-->
-        <Config
-            Id="0x000011A0" Type="1" Enable="true" Timeout="500" Target="ravelin"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000 , 0xFFF,
-                      0x40800100 , 0xFFF" />   
-
-    </PerfBoost>        
+    </PerfBoost>
 </BoostConfigs>

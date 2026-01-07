@@ -15,7 +15,7 @@
 				"EnableMouthMask": false,
 				"EnableMouthRobost": false,
 				"EnableEyeRobost": false,
-				"EnableForehead": true,
+				"EnableForehead": false,
 				"EnableFaceParsing": false,
 				"EnableFace3D": false,
 				"NumThread": 3,
@@ -35,10 +35,12 @@
 			"Mode": "Preview",
 			"UseFor": "Runtime",
 			"Face": {
+				"EnableFaceParsing": false,
 				"EnableMouthMask": false,
 				"EnableMouthRobost": false,
 				"EnableEyeRobost": false,
-				"EnableForehead": true
+				"EnableForehead": false,
+				"EnableAge": false
 			}
 		},
 		{
@@ -78,6 +80,14 @@
 				"FaceRetouch": {
 					"EnableFaceRetouch": false
 				}
+			}
+		},
+		{
+			"Mode": "Capture",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableFaceParsing": false,
+				"EnableAge": false
 			}
 		}
 	]

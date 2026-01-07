@@ -86,13 +86,19 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.custom_nw_ecc", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property) VALUES("persist.vendor.radio.ecc_hard");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.eri64_as_home", "0");
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.prefer_spn", "0");
+/* Modify for manual Network list show wrong start*/
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.prefer_spn", "2");
+/* Modify for manual Network list show wrong end*/
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.proc_nw_scan", "0");
+/* HTH-283135 start
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.sglte.eons_domain", "cs");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.sglte.eons_roam", "true");
+HTH-283135 end*/
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.prov_emer_in_lpm", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.relay_oprt_change", "0");
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.lte_vrte_ltd", "0");
+/* HTH-283135 start*/
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.lte_vrte_ltd", "1");
+/* HTH-283135 end*/
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.3gpp_drte_ltd", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.no_cons_man_roam", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.wait_for_pbm", "0");
@@ -177,3 +183,14 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.hidl_dev_service", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.is_ussd_supported", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.hlos_prov_pref_auto", "0");
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.shutdown_deactivate_timer", "90");
+UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.cs_srv_type";
+DELETE FROM qcril_properties_table WHERE property="persist.vendor.radio.hlos_prov_pref_auto";
+UPDATE qcril_properties_table SET def_val="" WHERE property="all_bc_msg";
+UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.custom_ecc";
+UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.poweron_opt";
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.support_vonr_update", "false");
+UPDATE qcril_properties_table SET def_val="true" WHERE property="persist.vendor.radio.process_sups_ind";
+
+
+

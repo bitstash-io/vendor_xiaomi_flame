@@ -3,10 +3,6 @@
 	"TrueSight":
 	[
 		{
-			"ConfigurePath":"5_DLRetouch/mode_rear.json",
-			"Index":5
-		},
-		{
 			"ConfigurePath":"20_FaceRetouch/mode_rear.json",
 			"Index":20
 		}

@@ -30,6 +30,18 @@
 			}
 		},
 		{
+			"Mode": "Preview",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableFace": false,
+				"EnableFaceParsing": false,
+				"EnableMouthMask": false,
+				"EnableMouthRobost": false,
+				"EnableEyeRobost": false,
+				"EnableAge": false
+			}
+		},
+		{
 			"Mode": "Capture",
 			"UseFor": "Initialize",
 			"Face": {
@@ -67,6 +79,14 @@
 				"FaceRetouch": {
 					"EnableFaceRetouch": false
 				}
+			}
+		},
+		{
+			"Mode": "Capture",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableFaceParsing": false,
+				"EnableAge": false
 			}
 		}
 	]

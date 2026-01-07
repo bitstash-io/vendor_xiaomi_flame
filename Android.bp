@@ -4,7 +4,7 @@
 
 soong_namespace {
     imports: [
-        "device/xiaomi/breeze",
+        "device/xiaomi/flame",
         "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
@@ -939,41 +939,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.secure_element@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libcutils",
-                "libesepmconfig",
-                "android.hardware.secure_element@1.0",
-                "libGPTEE_vendor",
-                "vendor.qti.esepowermanager@1.0",
-                "vendor.qti.esepowermanager@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "xiaomi",
     strip: {
@@ -1050,7 +1015,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.eeprom.gt24p128c2csli_imx766",
+    name: "com.qti.sensor.c3f_king_hi556w_front_ii",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1058,7 +1023,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_king_hi556w_front_ii.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1094,7 +1059,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.eeprom.irs2381c_polar",
+    name: "com.qti.sensor.c3f_shine_hi846w_front_ii",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1102,7 +1067,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_shine_hi846w_front_ii.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1138,7 +1103,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.eeprom.truly_cmb433",
+    name: "com.qti.sensor.c3f_shine_imx852_main_ii",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1146,7 +1111,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_shine_imx852_main_ii.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1182,7 +1147,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.flash.lm3644",
+    name: "com.qti.sensor.c3f_shine_ov13b10_main_ii",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1190,7 +1155,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.flash.lm3644.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_shine_ov13b10_main_ii.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1226,7 +1191,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.ois.bu63169gwz",
+    name: "com.qti.sensor.c3f_truly_s5kjns_main_i",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1234,7 +1199,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.ois.bu63169gwz.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_truly_s5kjns_main_i.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1270,7 +1235,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.fillmore_imx686",
+    name: "com.qti.sensor.c3f_truly_sc1320cs_main_i",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1278,7 +1243,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.fillmore_imx686.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_truly_sc1320cs_main_i.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1314,7 +1279,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx318",
+    name: "com.qti.sensor.c3f_truly_sc520cs_front_i",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1322,7 +1287,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx318.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_truly_sc520cs_front_i.so",
             ],
             shared_libs: [
                 "libc++",
@@ -1358,7 +1323,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx334",
+    name: "com.qti.sensor.c3f_truly_sc820cs_front_i",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1366,2251 +1331,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx334.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx362",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx362.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx363",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx363.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx376",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx376.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx386",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx386.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx476",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx476.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx481",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx481.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx519",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx519.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx563",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx563.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx576",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx576.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx577",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx577.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx586",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx586.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx588",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx588.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx686",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx686.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.imx766",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.imx766.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.max7366_6dof",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.max7366_6dof.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.max7366_eyetrack",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.max7366_eyetrack.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.max7366_ov6211",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.max7366_ov6211.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.max7366_ov9282",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.max7366_ov9282.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_aac_gc02m1b",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_aac_gc02m1b.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_aac_s5k3l6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_aac_s5k3l6.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_aac_s5khm6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_aac_s5khm6.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_aac_s5khm6sf",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_aac_s5khm6sf.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_gc02m1b",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_gc02m1b.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_ov08d10",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_ov08d10.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_ov13b10",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_ov13b10.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_s5khm6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_s5khm6.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_s5khm6sf",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_s5khm6sf.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_ofilm_s5kjnssq03",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_ofilm_s5kjnssq03.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_sunny_ov08d10_front_i",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_sunny_ov08d10_front_i.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.n19_truly_s5kjnssq03",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.n19_truly_s5kjnssq03.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov12a10",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov12a10.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov12a10_front",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov12a10_front.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov13855",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov13855.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov13880",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov13880.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov6211_master",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov6211_master.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov6211_slave",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov6211_slave.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov7251",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov7251.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov8856",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov8856.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov8856_master",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_master.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov8856_slave",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_slave.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov9282_master",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov9282_master.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.ov9282_slave",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.ov9282_slave.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k2l7",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k2l7.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k2x5sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k2x5sp.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k33dxx",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k33dxx.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k3m5",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k3m5.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k3p9",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k3p9.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k4h7",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k4h7.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k5e9yu05",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k5e9yu05.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5k5e9yx04",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5k5e9yx04.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "android.hardware.graphics.common@1.1",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamera_metadata",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libutils",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.s5kjd1sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.s5kjd1sp.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.c3f_truly_sc820cs_front_i.so",
             ],
             shared_libs: [
                 "libc++",
@@ -4575,11 +2296,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/camera/components/com.qti.node.mialgocontrol.so",
             ],
             shared_libs: [
-                "com.qti.chi.override",
+                "libcamxcommonutils",
+                "libcamximageformatutils",
                 "libcamera_metadata",
                 "libchilog",
-                "libcutils",
                 "libcom.qti.chinodeutils",
+                "libutils",
+                "libcutils",
                 "libjpeg",
                 "libpng",
                 "libz",
@@ -4587,18 +2310,16 @@ cc_prebuilt_library_shared {
                 "libexpat",
                 "libEGL",
                 "libGLESv2",
-                "libnativewindow",
-                "libutils",
-                "libcamxcommonutils",
-                "libcamximageformatutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libsync",
-                "libanc_single_rt_bokeh",
-                "libmorpho_HdrChecker",
-                "libmialgo_sd",
+                "libanc_night",
                 "liblog",
+                "libnativewindow",
+                "libcamera_scene",
+                "libc++_shared",
+                "libmialgo_sd",
+                "libmpbase",
+                "libmorpho_HdrChecker",
+                "libanc_single_rt_bokeh",
+                "libMiVideoFilter",
                 "libc++",
                 "libc",
                 "libm",
@@ -4625,6 +2346,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcamera_metadata",
+                "libchilog",
                 "libcom.qti.chinodeutils",
                 "liblog",
                 "libutils",
@@ -6031,33 +3753,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdepthmapwrapper",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdepthcomputation",
-                "libspectre",
-                "libm",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -9018,39 +6713,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.dsi.ant@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "com.dsi.ant@1.0",
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.chi.override",
     owner: "xiaomi",
     strip: {
@@ -9085,6 +6747,43 @@ cc_prebuilt_library_shared {
                 "libbitmlenginev2",
                 "libchilog",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "fingerprint.fpc.default",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/fingerprint.fpc.default.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "com.fingerprints.extension@1.0",
+                "vendor.xiaomi.hardware.fx.tunnel@1.0",
+                "android.hardware.biometrics.fingerprint@2.1",
+                "libQSEEComAPI",
+                "libion",
+                "libdmabufheap",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -9665,36 +7364,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "jcos_nq_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/jcos_nq_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib-imscommon",
     owner: "xiaomi",
     strip: {
@@ -10229,6 +7898,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMiVideoFilter",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMiVideoFilter.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libQSEEComAPI",
     owner: "xiaomi",
     strip: {
@@ -10413,7 +8111,6 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libGLESv3",
                 "libnativewindow",
-                "libOpenCL",
                 "libGLESv2",
                 "libm",
                 "libdl",
@@ -10587,8 +8284,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libanc_night.so",
             ],
             shared_libs: [
-                "libz",
                 "liblog",
+                "libz",
                 "libm",
                 "libdl",
                 "libc",
@@ -11008,6 +8705,32 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_scene",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamera_scene.so",
+            ],
+            shared_libs: [
+                "libSNPE",
+                "libc++_shared",
+                "liblog",
+                "libm",
+                "libc",
                 "libdl",
             ],
         },
@@ -12107,31 +9830,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdepthcomputation",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdepthcomputation.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libspectre",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdiag",
     owner: "xiaomi",
     strip: {
@@ -12781,12 +10479,18 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
+                "libion",
                 "libcutils",
-                "libhidlbase",
-                "libhwbinder",
                 "libutils",
-                "libhidltransport",
+                "libhardware",
+                "libhidlbase",
+                "libc++",
+                "libvndksupport",
+                "libcgrouprc",
+                "libbase",
+                "libunwindstack",
+                "libprocessgroup",
+                "liblzma",
                 "vendor.goodix.hardware.biometrics.fingerprint@2.1",
                 "libgf_hal",
                 "libgf_ca",
@@ -12981,6 +10685,31 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhta",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhta.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -13194,34 +10923,6 @@ cc_prebuilt_library_shared {
                 "libloc_base_util",
                 "libsqlite",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjni_aidenoiserutilv2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjni_aidenoiserutilv2.so",
-            ],
-            shared_libs: [
-                "libaidenoiserv2",
-                "liblog",
-                "libcutils",
-                "libopencv",
                 "libc++",
                 "libc",
                 "libm",
@@ -14166,61 +11867,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmialgo_ai_vision",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmialgo_ai_vision.so",
-            ],
-            shared_libs: [
-                "libSNPE",
-                "libc++_shared",
-                "libm",
-                "liblog",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmialgo_aio_seg",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmialgo_aio_seg.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libmialgo_ai_vision",
-                "libmialgo_utils",
-                "libcdsprpc",
-                "libOpenCL",
-                "libm",
-                "libc++_shared",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmialgo_sd",
     owner: "xiaomi",
     strip: {
@@ -14232,41 +11878,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmialgo_sd.so",
             ],
             shared_libs: [
-                "libOpenCL",
-                "libcdsprpc",
-                "libmialgo_utils",
-                "libmialgo_ai_vision",
-                "libSNPE",
                 "libc++_shared",
-                "libm",
                 "liblog",
-                "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmialgo_utils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmialgo_utils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++_shared",
                 "libm",
                 "libdl",
-                "libc",
             ],
         },
     },
@@ -16690,6 +14306,7 @@ cc_prebuilt_library_shared {
                 "qtiPeripheralMgr",
                 "vendor.qti.hardware.radio.ims-V12-ndk_platform",
                 "vendor.qti.hardware.radio.qtiradio-V8-ndk_platform",
+                "libqcrilNrVoiceModule",
                 "qcrilNr_aidl_IQtiRadioConfig",
                 "libsystem_health_mon",
                 "libxml2",
@@ -16944,6 +14561,7 @@ cc_prebuilt_library_shared {
                 "libril-db",
                 "libQtiRilLoadable",
                 "libril-legacy",
+                "libqcrilNr",
                 "libc++",
                 "libc",
                 "libm",
@@ -18072,32 +15690,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libreverse_rpc_tests_skel",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libreverse_rpc_tests_skel.so",
-            ],
-            shared_libs: [
-                "libadsprpc",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libril-db",
     owner: "xiaomi",
     strip: {
@@ -18975,30 +16567,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspectre",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspectre.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libm",
-                "libc",
             ],
         },
     },
@@ -20370,6 +17938,7 @@ cc_prebuilt_library_shared {
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libdisplayconfig.qti",
+                "libqcrilNrLogger",
                 "libxml2",
                 "libc++",
                 "libc",
@@ -20426,37 +17995,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core",
                 "libizat_core",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "ls_nq_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/ls_nq_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
-                "se_nq_extn_client",
                 "libc++",
                 "libc",
                 "libm",
@@ -20828,36 +18366,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "se_nq_extn_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/se_nq_extn_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "sensors.ssc",
     owner: "xiaomi",
     strip: {
@@ -20899,7 +18407,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.touch",
+    name: "sensors.touch.detect",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -20907,10 +18415,9 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/sensors.touch.so",
+                "proprietary/vendor/lib64/sensors.touch.detect.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -20918,8 +18425,6 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libhidlbase",
                 "libsensorslog",
-                "libssc",
-                "libsnsapi",
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@2.0",
                 "android.hardware.sensors@2.0-ScopedWakelock",
@@ -24980,34 +22485,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.silead.hardware.fingerprintext@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_bm2n31_bin",
     filename: "bm2n31.bin",
@@ -25099,6 +22576,24 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so",
+    filename: "libSnpeHtpV68Skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so",
+    filename: "libSnpeHtpV69Skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "xiaomi",
@@ -25130,6 +22625,15 @@ prebuilt_rfsa {
     filename: "libbitml_nsp_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_libcalculator_skel_so",
+    filename: "libcalculator_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libcalculator_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -25216,10 +22720,19 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libsixth_sia81xx_rx_so",
-    filename: "libsixth_sia81xx_rx.so",
+    name: "vendor_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so",
+    filename: "libsnpe_dsp_v65_domains_v2_skel.so",
     owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libsixth_sia81xx_rx.so",
+    src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so",
+    filename: "libsnpe_dsp_v66_domains_v2_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -25267,6 +22780,131 @@ prebuilt_rfsa {
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin",
     relative_install_path: "adsp",
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_calibverify_TriCamera",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libarcsoft_calibverify_TriCamera.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_single_chart_calibration",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libarcsoft_single_chart_calibration.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_tricam_calibration",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libarcsoft_tricam_calibration.so",
+            ],
+            shared_libs: [
+                "libarcsoft_calibverify_TriCamera",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_tricam_calibration2D",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libarcsoft_tricam_calibration2D.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_tricam_verification",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libarcsoft_tricam_verification.so",
+            ],
+            shared_libs: [
+                "libarcsoft_calibverify_TriCamera",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -27727,38 +25365,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "batterysecret",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/batterysecret",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "libbase",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "android.hardware.health@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "cdsprpcd",
     owner: "xiaomi",
     target: {
@@ -28011,7 +25617,6 @@ cc_prebuilt_binary {
                 "android.hardware.bluetooth@1.0",
                 "libsoc_helper",
                 "vendor.qti.hardware.fm@1.0_vendor",
-                "com.dsi.ant@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.1",
                 "vendor.qti.hardware.btconfigstore@1.0",
@@ -28616,46 +26221,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.secure_element@1.2-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "se_nq_extn_client",
-                "ls_nq_client",
-                "jcos_nq_client",
-                "libhidlbase",
-                "android.hardware.secure_element@1.0",
-                "android.hardware.secure_element@1.1",
-                "android.hardware.secure_element@1.2",
-                "vendor.qti.esepowermanager@1.0",
-                "vendor.qti.esepowermanager@1.1",
-                "android.hardware.secure_element@1.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.silead.hardware.fingerprintext@1.0-service",
     owner: "xiaomi",
     target: {
@@ -28669,7 +26234,7 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhardware",
                 "libutils",
-                "vendor.silead.hardware.fingerprintext@1.0",
+                "vendor.xiaomi.hardware.fx.tunnel@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -30296,37 +27861,4 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
-}
-
-filegroup {
-    name: "proprietary_rildb_config_sql_files",
-    srcs: [
-        "proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql",
-    ],
-}
-
-filegroup {
-    name: "proprietary_rildb_other_sql_files",
-    srcs: [
-        "proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql",
-    ],
 }
