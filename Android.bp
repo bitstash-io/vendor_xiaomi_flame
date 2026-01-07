@@ -11964,6 +11964,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmifpext",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmifpext.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "android.hardware.biometrics.fingerprint@2.1",
+                "vendor.xiaomi.hardware.fingerprintextension@1.0",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libminkdescriptor",
     owner: "xiaomi",
     strip: {
@@ -20162,6 +20194,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fingerprint@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.fm@1.0_vendor",
     stem: "vendor.qti.hardware.fm@1.0",
     owner: "xiaomi",
@@ -24935,6 +24995,15 @@ dex_import {
     jars: [
         "proprietary/system/framework/WfdCommon.jar",
     ],
+}
+
+dex_import {
+    name: "com.fingerprints.extension",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/vendor/framework/com.fingerprints.extension.jar",
+    ],
+    soc_specific: true,
 }
 
 dex_import {
