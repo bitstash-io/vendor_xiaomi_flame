@@ -633,34 +633,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/flame/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/xiaomi/flame/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
     vendor/xiaomi/flame/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a610_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b00 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a610_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b01 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a610_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b02 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a610_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.elf \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a610_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.mdt \
     vendor/xiaomi/flame/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a660_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_sqe.fw \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_gmu.bin \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.b00 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.b01 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.b02 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.elf \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.mbn \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a662_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_zap.mdt \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_sqe.fw \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.b00 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.b01 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.b02 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.elf \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.mbn \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a710_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a710_zap.mdt \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_sqe.fw \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b00 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b01 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b02 \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.elf \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mbn \
-    vendor/xiaomi/flame/proprietary/vendor/firmware/a730_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mdt \
     vendor/xiaomi/flame/proprietary/vendor/firmware/evass-lt-21.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b00 \
     vendor/xiaomi/flame/proprietary/vendor/firmware/evass-lt-21.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b01 \
     vendor/xiaomi/flame/proprietary/vendor/firmware/evass-lt-21.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b02 \
